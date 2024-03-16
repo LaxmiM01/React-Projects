@@ -17,14 +17,17 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
+
         <Routes>
           <Route exact path='/cart' element={<Cart cartProducts={cartProducts}/>}>
           </Route>
         </Routes>
+
         <Routes>
           <Route exact path='/' element={<Gallery productItems={productItems} handleAddToCart={handleAddToCart}/>}>
           </Route>
         </Routes>
+        
       </Router>
       
     </div>
